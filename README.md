@@ -23,7 +23,12 @@ You always do something and then forget, so document the shit out of this as it 
 
 ### Steps
 
-Create new Angular app with `ng new ngAlertTest --prefix ngat --routing`  
-Install Clarity  with `ng add @clr/angular`  
-Create new module with `ng g m alertModule`  
+Create new Angular app with `ng new ngAlertTest --prefix ngat --routing`
+Install Clarity  with `ng add @clr/angular`
+Create alerts module with `ng g m alerts --routing=true`
+Create inventory(blank) module with `ng g m inventory --routing=true`
+Create new alerts component in alerts module with `ng g c alerts/alert --module=alerts --prefix=nga`
+Create new inventory component (main) in inventory module with `ng g c inventory/main --export=true --module=inventory --prefix=nga`
+Set up routes in app-routing.module
+Create a 404 page with `ng g c PageNotFound`
 
