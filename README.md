@@ -1,27 +1,29 @@
-# NgAlertTest
+# ngAlertTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
+## Overview
 
-## Development server
+This is a sample app to test and document the alerts in Project Clarity, maily to see what I can get it to do
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Test Case
 
-## Code scaffolding
+Create a component that you can bind to a generic alert object
+- Can you elevate an alert to app level on the fly?
+- Can you turn an alert on and off on the fly?
+- Can you adjust an alert's contents easily? (maybe for displaying a countdown?)
+- Can you bind the control to multiple alerts?
+- Does adding a new alert add to the alert count?
+- Use an array to hold these alert objects?
+- Generate a selection of generic alerts that can be passed a variable or two?
+    - Make the alerts multi-lingual or at least try?
+- Make the alert test a feature module and route it along with another module
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Document EVERYTHING
 
-## Build
+You always do something and then forget, so document the shit out of this as it serves no other purpose
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Steps
 
-## Running unit tests
+Create new Angular app with `ng new ngAlertTest --prefix ngat --routing`  
+Install Clarity  with `ng add @clr/angular`  
+Create new module with `ng g m alertModule`  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
